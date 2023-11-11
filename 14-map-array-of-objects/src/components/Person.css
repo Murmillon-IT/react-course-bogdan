@@ -1,0 +1,26 @@
+.Person {
+  margin: 10px;
+  padding: 0 0 20px 0;
+  width: 235px;
+  border: 1px solid lightgrey;
+  border-radius: 10px;
+  cursor: pointer;
+
+  transition: transform 0.1s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+
+.Person:hover {
+    transform: scale(1.04);
+    box-shadow: 2px 2px 7px lightgray;
+}
+
+.Person:active {
+    transform: scale(1.08);
+    box-shadow: 4px 4px 14px lightgray;
+}
+
+.Person img {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 5px;
+}
