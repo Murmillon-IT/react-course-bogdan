@@ -5,8 +5,8 @@ function Login() {
       username: event.target.username.value,
       password: event.target.password.value,
     }
-      console.log(userDate)
-      alert(JSON.stringify(userDate))
+    console.log(userDate)
+    alert(JSON.stringify(userDate))
   }
 
   return (
