@@ -1,0 +1,30 @@
+.button-active {
+  background-color: red;
+  color: white;
+
+  transition: transform 0.1s ease-in-out;
+}
+
+.button-active:hover {
+  outline: transparent;
+  transform: scale(1.05);
+}
+
+.button-active:active {
+    background-color: rgb(255, 0, 0);
+    transform: scale(1);
+}
+
+.button-disable {
+  background-color: gray;
+  color: rgb(63, 63, 63);
+  cursor: default;
+}
+
+.button-disable:hover {
+  outline: transparent;
+}
+
+.button-disable:active {
+  background-color: gray;
+}
