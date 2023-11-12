@@ -1,0 +1,42 @@
+.App {
+  text-align: center;
+}
+
+h1 {
+  font-size: 70px;
+  margin-top: 20px;
+}
+
+button {
+  padding: 15px;
+  font-size: 30px;
+  border-radius: 5px;
+  border: 0;
+  margin: 20px;
+  cursor: pointer;
+  outline: transparent;
+
+  transition: outline 0.1s ease-in-out;
+}
+
+button:active {
+  background-color: rgb(200, 200, 200);
+}
+
+button:hover {
+  outline: rgb(0, 217, 255) 2px solid;
+}
+
+form {
+  font-size: 30px;
+}
+
+input {
+  padding: 10px;
+  margin: 15px;
+  font-size: 20px;
+}
+
+label {
+  display: block;
+}
