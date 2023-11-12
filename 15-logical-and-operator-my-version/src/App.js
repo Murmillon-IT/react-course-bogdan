@@ -23,9 +23,9 @@ function App() {
         <Button onClick={incrementCount} />
       </div>
       {count > 0 ? (
-        <ButtonReset buttonActive='button-active' onClick={resetCount} />
+        <ButtonReset buttonStyle='button-active' onClick={resetCount} />
       ) : (
-        <ButtonReset buttonDisable='button-disable' />
+        <ButtonReset buttonStyle='button-disable' />
       )}
     </div>
   )

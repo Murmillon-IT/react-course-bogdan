@@ -1,10 +1,6 @@
-function ButtonReset({ onClick, buttonActive, buttonDisable }) {
-  return buttonActive === 'button-active' ? (
-    <button className={buttonActive} onClick={onClick}>
-      Reset
-    </button>
-  ) : (
-    <button className={buttonDisable} onClick={onClick}>
+function ButtonReset({ onClick, buttonStyle }) {
+  return (
+    <button className={buttonStyle} onClick={onClick}>
       Reset
     </button>
   )
