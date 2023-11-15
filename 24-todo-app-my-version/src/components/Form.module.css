@@ -1,0 +1,91 @@
+.form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+
+  margin-top: 30px;
+}
+
+.formItem {
+  margin-bottom: 40px;
+}
+
+.buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  margin-top: 40px;
+}
+
+.button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 70px;
+  height: 70px;
+  margin-right: 30px;
+
+  border: none;
+  border-radius: 8px;
+  background-color: white;
+  cursor: pointer;
+  transition: background-color 0.1s ease-in-out;
+}
+
+.button:hover {
+  background-color: rgb(255, 255, 180);
+}
+
+.button:last-child {
+  margin-right: 0;
+}
+
+.title {
+  font-size: 60px;
+  color: white;
+
+  margin-bottom: 50px;
+}
+
+.titleH3 {
+  font-size: 40px;
+  color: white;
+
+  margin-top: 60px;
+}
+
+.enterText {
+  font-size: 30px;
+
+  border: none;
+  border-radius: 8px;
+
+  width: 450px;
+  height: 70px;
+  margin-right: 30px;
+  padding: 0 20px;
+}
+
+.enterText:focus {
+  outline: brown 3px solid;
+}
+
+.buttonSubmit {
+  font-size: 30px;
+  border: none;
+  border-radius: 8px;
+  background-color: white;
+  cursor: pointer;
+
+  width: 130px;
+  height: 70px;
+
+  transition: background-color 0.1s ease-in-out;
+}
+
+.buttonSubmit:hover {
+  background-color: rgb(255, 255, 180);
+}

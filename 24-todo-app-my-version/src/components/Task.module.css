@@ -1,0 +1,107 @@
+.task {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  background-color: white;
+  border: gray 2px solid;
+  border-radius: 8px;
+
+  padding: 10px 30px;
+  margin-bottom: 15px;
+
+  width: 800px;
+  height: 50px;
+}
+
+.taskDone {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  background-color: transparent;
+  border: gray 2px solid;
+  border-radius: 8px;
+
+  padding: 10px 30px;
+  margin-bottom: 15px;
+
+  width: 800px;
+  height: 50px;
+}
+
+.title {
+  font-size: 30px;
+  font-weight: normal;
+
+  margin-left: 15px;
+  width: 680px;
+
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.titleDone {
+  font-size: 30px;
+  font-weight: normal;
+
+  margin-left: 15px;
+  width: 680px;
+
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  color: gray;
+}
+
+.icon {
+  /* fill: rgba(15, 114, 190, 0.8); */
+  fill: brown;
+}
+
+.iconDone {
+  fill: gray;
+}
+
+.button {
+  border: 0;
+  background-color: transparent;
+  fill: gray;
+  cursor: pointer;
+  transition: transform 0.1s ease-in-out, fill 0.1s ease-in-out;
+
+  margin-right: 20px;
+}
+
+.button:hover {
+  fill: red;
+  transform: scale(1.2);
+}
+
+.button:last-child {
+  margin-right: 0;
+}
+
+.button:last-child:hover {
+  fill: green;
+}
+
+.buttonDone {
+  border: 0;
+  background-color: transparent;
+  fill: gray;
+  cursor: pointer;
+  transition: transform 0.1s ease-in-out, fill 0.1s ease-in-out;
+
+  margin-right: 20px;
+}
+
+.buttonDone:hover {
+  fill: gray;
+  transform: scale(1.2);
+}
+
+.buttonDone:last-child {
+  margin-right: 0;
+}
