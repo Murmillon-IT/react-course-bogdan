@@ -4,7 +4,7 @@
   justify-content: space-between;
   align-items: center;
 
-  margin-top: 30px;
+  margin: 30px 0 50px;
 }
 
 .formItem {
@@ -55,6 +55,13 @@
   color: white;
 
   margin-top: 60px;
+}
+
+.titleH4 {
+  font-size: 30px;
+  color: white;
+
+  margin-top: 20px;
 }
 
 .enterText {

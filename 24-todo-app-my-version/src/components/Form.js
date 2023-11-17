@@ -5,7 +5,13 @@ import Task from './Task'
 function Form() {
   const [text, setText] = useState('')
   const [components, setComponents] = useState([])
+  const [countDoneComponents, setCountDoneComponents] = useState(0)
   const inputRef = useRef()
+
+  const changeNumberComponents = {
+    plus: () => setCountDoneComponents((prevCount) => prevCount + 1),
+    minus: () => setCountDoneComponents((prevCount) => prevCount - 1),
+  }
 
   //? Функция создания компонента при клике на кнопку Submit
   function creacteComponent() {
@@ -13,7 +19,11 @@ function Form() {
     if (text !== '') {
       setComponents((prevComponents) => [
         ...prevComponents,
-        <Task text={text} key={prevComponents.length} />,
+        <Task
+          text={text}
+          changeNumberComponents={changeNumberComponents}
+          key={prevComponents.length}
+        />,
       ])
       setText('') //очистка текста после submit
     } else {
@@ -26,12 +36,14 @@ function Form() {
   //? Функция удаления всех компонентов при клике на кнопку очистки
   const cleanComponents = () => {
     setComponents([])
+    setCountDoneComponents(0)
   }
 
   //? Функция от перезагрузки страницы
   const handleFormSubmit = (event) => {
     event.preventDefault()
   }
+  console.log(components)
 
   return (
     <div className={styles.form}>
@@ -69,6 +81,12 @@ function Form() {
       </form>
       {/* Если задач нет, выводится надпись */}
       {components.length > 0 ? components : <h3 className={styles.titleH3}>Todo list is empty</h3>}
+
+      {countDoneComponents ? (
+        <h4 className={styles.titleH4}>You have completed {countDoneComponents} todos!</h4>
+      ) : (
+        false
+      )}
     </div>
   )
 }
